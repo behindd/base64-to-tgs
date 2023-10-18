@@ -51,7 +51,7 @@ def main():
     # Modify the 'crack_file' as specified
     with open('crack_file', 'r') as crack_file:
         tgs_hashcat_lines = [
-            f"$krb5tgs$23*{line.strip()}*"
+            f"$krb5tgs$23*{line.strip()}"
             for line in crack_file.readlines()
         ]
     
@@ -59,10 +59,10 @@ def main():
         tgs_hashcat_file.write('\n'.join(tgs_hashcat_lines))
     
     # Delete 'crack_file' and 'ticket.kirbi' files
-    if os.path.exists('crack_file'):
-        os.remove('crack_file')
-    if os.path.exists('ticket.kirbi'):
-        os.remove('ticket.kirbi')
+    #if os.path.exists('crack_file'):
+     #   os.remove('crack_file')
+    #if os.path.exists('ticket.kirbi'):
+     #   os.remove('ticket.kirbi')
 
     print(f"{GREEN}Ready for Hashcat! Please use mode 13100{RESET}")
 
