@@ -13,3 +13,7 @@ If we omit the base64 /out:true command in Mimikatz, it will extract the tickets
 The script takes the base64 blob retrieved above and prepares it for cracking. Copy and paste the base64 blob from the Mimikatz output and save it on a file.
 
 This script first reads the base64 file, removes new lines and white spaces, decodes it into ticket.kirbi, runs kirbi2john to extract the hash, and then modifies it as specified to be able to use Hashcat against the hash before finally outputting "Ready for Hashcat! Please use mode 13100."
+
+It also saves the output of TGS file on your clipboard. Ready for pasting onto your local Windows machine for cracking. 
+First, install xclip on your Linux if you haven't already: <br>
+- sudo apt-get install xclip
