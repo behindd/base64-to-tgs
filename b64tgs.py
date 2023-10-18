@@ -11,7 +11,19 @@ BLUE = "\033[94m"
 PURPLE = "\033[95m"
 RESET = "\033[0m"
 
+# Define the ASCII art text
+ascii_art = '''
+  _       __ _  _     _          _______ _____  _____ 
+ | |     / /| || |   | |        |__   __/ ____|/ ____|
+ | |__  / /_| || |_  | |_ ___      | | | |  __| (___  
+ | '_ \| '_ \__   _| | __/ _ \     | | | | |_ |\___ \ 
+ | |_) | (_) | | |   | || (_) |    | | | |__| |____) |
+ |_.__/ \___/  |_|    \__\___/     |_|  \_____|_____/ 
+'''                                                      
+                                                      
+
 def main():
+    print(f"{BLUE}{ascii_art}{RESET}")
     print(f"{PURPLE}      by @justt_N{RESET}")
     print(f"{RED}Name" f"{WHITE}:" f"{YELLOW} base64 to TGS{RESET}\n")
     b64_file = input("Enter the name of the base64 file: ")
@@ -56,4 +68,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
