@@ -26,6 +26,7 @@ def main():
     print(f"{BLUE}{ascii_art}{RESET}")
     print(f"{PURPLE}      by @justt_N{RESET}")
     print(f"{RED}Name" f"{WHITE}:" f"{YELLOW} base64 to TGS{RESET}\n")
+    print(f"{RED}☢"f"{YELLOW} Keep in mind this will overwrite your clipboard. Save your clipboard contents before proceeding!" f"{RED}☢{RESET}\n")
     b64_file = input("Enter the name of the base64 file: ")
     
     try:
