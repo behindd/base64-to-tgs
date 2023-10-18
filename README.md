@@ -16,6 +16,6 @@ The script takes the base64 blob retrieved above and prepares it for cracking. C
 
 This script first reads the base64 file, removes new lines and white spaces, decodes it into ticket.kirbi, runs kirbi2john to extract the hash, and then modifies it as specified to be able to use Hashcat against the hash before finally outputting "Ready for Hashcat! Please use mode 13100."
 
-It also saves the contents of TGS file on your clipboard in case you plan to paste it on your local Windows machine for cracking. No need to open to copy the entire content! 
+It also saves the contents of TGS file on your clipboard in case you plan to paste it on your local Windows machine for cracking. No need to open to copy the entire content! <br>
 First, install xclip on your Linux if you haven't already: <br>
 - sudo apt-get install xclip
