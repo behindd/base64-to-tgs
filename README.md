@@ -1,5 +1,6 @@
 # base64-to-tgs
-
+To run this script:
+python3 b64tgs.py 
 Make sure you have the required tools (base64, kirbi2john, and sed) installed on your system for this script to work. You may also need to adjust the paths to these tools if they are not in your system's PATH.
 
 Extracting Tickets from Memory with Mimikatz
