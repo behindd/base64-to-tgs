@@ -35,7 +35,7 @@ def main():
         print(f"{RED}File missing base64{RESET}")
         return
 
-    print(f"{YELLOW}Ticket prepared for Cracking:" f"{BLUE}tgs_hashcat{RESET}")
+    print(f"{YELLOW}💀 Ticket prepared for Cracking:" f"{BLUE}tgs_hashcat{RESET}")
 
     # Remove new lines and white spaces from the base64 blob
     base64_blob = base64_blob.replace(b'\n', b'').replace(b' ', b'')
@@ -59,12 +59,15 @@ def main():
         tgs_hashcat_file.write('\n'.join(tgs_hashcat_lines))
     
     # Delete 'crack_file' and 'ticket.kirbi' files
-    #if os.path.exists('crack_file'):
-     #   os.remove('crack_file')
-    #if os.path.exists('ticket.kirbi'):
-     #   os.remove('ticket.kirbi')
+    if os.path.exists('crack_file'):
+        os.remove('crack_file')
+    if os.path.exists('ticket.kirbi'):
+        os.remove('ticket.kirbi')
 
-    print(f"{GREEN}Ready for Hashcat! Please use mode 13100{RESET}")
+    # Copy the contents of 'tgs_hashcat' to the clipboard using xclip
+    subprocess.run(['xclip', '-selection', 'c', 'tgs_hashcat'])
+    print(f"{GREEN}➜ Ready for Hashcat! Please use mode 13100{RESET}")
+    print(f"{BLUE}➜ Contents of 'tgs_hashcat' copied to clipboard in case you plan \nto paste it on your local Windows machine for cracking.")
 
 if __name__ == "__main__":
     main()
