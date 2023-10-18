@@ -4,8 +4,8 @@ python3 b64tgs.py
 
 Make sure you have the required tools (base64, kirbi2john, and sed) installed on your system for this script to work. You may also need to adjust the paths to these tools if they are not in your system's PATH.
 
-Extracting Tickets from Memory with Mimikatz
-"mimikatz # base64 /out:true"
+Extracting Tickets from Memory with Mimikatz <br>
+"mimikatz # base64 /out:true" <br>
 "mimikatz # kerberos::list /export"
 
 If we omit the base64 /out:true command in Mimikatz, it will extract the tickets and save them as .kirbi files. Depending on our network position and our ability to transfer files to our attack host, this method may simplify the process of cracking the tickets.
