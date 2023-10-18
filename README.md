@@ -2,7 +2,7 @@
 To run this script:<br>
 - python3 b64tgs.py 
 
-Make sure you have the required tools (base64, kirbi2john, and sed) installed on your system for this script to work. You may also need to adjust the paths to these tools if they are not in your system's PATH.
+Make sure you have the required tools (base64, kirbi2john, xclip, and sed) installed on your system for this script to work. You may also need to adjust the paths to these tools if they are not in your system's PATH.
 
 Why use base64 to TGS? <br>
 
