@@ -7,7 +7,7 @@
 
   ```bash
   python3 b64tgs.py
-- Specify the file name.
+- Follow the on-screen prompt. It will ask you to specify the file name containing base64 blob.
 
 ## Requirements
 - Install xclip on your Linux if you haven't already: <br>
