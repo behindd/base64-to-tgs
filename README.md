@@ -1,6 +1,13 @@
 # base64-to-tgs
-To run this script:<br>
-- python3 b64tgs.py 
+
+## Usage
+
+- Copy the base64 blob (from Mimikatz) and save it on a file on your attacker machine.
+- Run the script:
+
+  ```bash
+  python3 b64tgs.py
+- Specify the file name.
 
 Make sure you have the required tools (base64, kirbi2john, xclip, and sed) installed on your system for this script to work. You may also need to adjust the paths to these tools if they are not in your system's PATH.
 
