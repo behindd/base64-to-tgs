@@ -1,5 +1,5 @@
 # base64-to-tgs
-![image](https://github.com/behindd/base64-to-tgs/assets/76596012/dc0e051e-9ce8-4e30-a134-fe028fda01d1)
+![image](https://github.com/behindd/base64-to-tgs/assets/76596012/9dbd1bc7-885d-4f8f-bd02-2e7f4c5873ee)
 
 ## Usage
 
