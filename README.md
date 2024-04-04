@@ -1,6 +1,16 @@
 # base64-to-tgs
 ![image](https://github.com/behindd/base64-to-tgs/assets/76596012/9dbd1bc7-885d-4f8f-bd02-2e7f4c5873ee)
 
+## Description
+The script takes the base64 blob retrieved above and prepares it for cracking. Copy and paste the base64 blob from the Mimikatz output and save it on a file.
+
+- This script first reads the base64 file, 
+- removes new lines and white spaces, 
+- decodes it into ticket.kirbi, 
+- runs kirbi2john to extract the hash, 
+- and then modifies it as specified to be able to use Hashcat against the hash before finally outputting "Ready for Hashcat! Please use mode 13100."
+- It also saves the contents of TGS file on your clipboard in case you plan to paste it on your local Windows machine for cracking. No need to open to copy the entire content! <br>
+
 ## Usage
 
 - Copy the base64 blob (from Mimikatz) and save it on a file on your attacker machine.
@@ -24,10 +34,3 @@ When the "base64 /out:true" command is not specified, Mimikatz will extract the 
 Extracting Tickets from Memory with Mimikatz (Victim machine): <br>
 - mimikatz # base64 /out:true <br>
 - mimikatz # kerberos::list /export
-
-## Description
-The script takes the base64 blob retrieved above and prepares it for cracking. Copy and paste the base64 blob from the Mimikatz output and save it on a file.
-
-This script first reads the base64 file, removes new lines and white spaces, decodes it into ticket.kirbi, runs kirbi2john to extract the hash, and then modifies it as specified to be able to use Hashcat against the hash before finally outputting "Ready for Hashcat! Please use mode 13100."
-
-It also saves the contents of TGS file on your clipboard in case you plan to paste it on your local Windows machine for cracking. No need to open to copy the entire content! <br>
